@@ -1,4 +1,8 @@
 import Card from "../../models/Card.js";
+import { it, expect } from "@jest/globals";
+import { describe } from "@jest/globals";
+
+
 
 describe("Card", () => {
     it("should be invalid if content is empty", async () => {

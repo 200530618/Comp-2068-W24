@@ -1,8 +1,10 @@
-import app from "./app.js";
+import dotenv from 'dotenv';
+import app from './app.js'; // Assuming app.js is the entry point of your application
 
-const port = process.env.PORT || 3000;
+dotenv.config();
 
-// Starts the Express server
-const server = app.listen(port, () => console.log(`API listening on http://localhost:${port}`));
+const PORT = process.env.PORT || 3000;
 
-export default server;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});

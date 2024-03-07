@@ -1,4 +1,7 @@
 import { jest } from "@jest/globals";
+import { describe } from "@jest/globals";
+import { it, expect } from "@jest/globals";
+
 import { home } from "../../controllers/PagesController";
 
 describe("PagesController", () => {
